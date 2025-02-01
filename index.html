@@ -3,11 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Etch-A-Sketch</title>
+    <title>Etch-a-Sketch</title>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">Hello World!</div>
+    <h1>Etch-a-Sketch</h1>
+    <div class="header">
+      <form>
+        <label for="size">Number of squares per side</label>
+        <input
+          type="text"
+          id="size"
+          name="size"
+          required
+          minlength="1"
+          maxlength="3"
+          size="10"
+          value="10"
+        />
+        <button type="button">Start</button>
+      </form>
+    </div>
+
+    <div class="sketch-box"></div>
   </body>
 </html>
